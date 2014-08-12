@@ -25,24 +25,6 @@ var GLOBALCONTROLS = {
 	pageScroll : 0,
 	isDesktop : false,
 	mobileScrollUp : false,
-	mobileMenu : function() {
-		var element = $('#h-mainMenu');
-		if(Modernizr.csstransitions === false) {
-			if(element.hasClass('active')) {
-				element.removeClass('active');
-				element.slideUp();
-			} else {
-				element.addClass('active');
-				element.slideDown();
-			}
-		} else {
-			if(element.hasClass('active')) {
-				element.removeClass('active');
-			} else {
-				element.addClass('active');
-			}
-		}
-	},
 	setPageWidth : function() {
 		var tempHolder;
 		tempHolder = GLOBALCONTROLS.isDesktop;
